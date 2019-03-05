@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        while(t-->0){
+            long n = in.nextLong()-1;
+            long n3,n5,n15,s;
+            n3=((3+(n-(n%3)))*(long)(n/3))/2;
+            n5=((5+(n-(n%5)))*(long)(n/5))/2;
+            n15=((15+(n-(n%15)))*(long)(n/15))/2;
+            s=n3+n5-n15;
+            System.out.println(s);
+        }
+    }
+}
