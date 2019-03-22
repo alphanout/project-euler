@@ -4,3 +4,4 @@ project-euler-solution
 2. Project Euler #2: Even Fibonacci numbers
 3. Project Euler #3: Largest prime factor
 4. Project Euler #4: Largest palindrome product
+5. Project Euler #5: Smallest multiple
