@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        for(int a0 = 0; a0 < t; a0++){
+            int m;
+             int sol=0;
+            int n = in.nextInt();
+            for(int i=999;i>100;i--){
+                for(int j=999;j>100;j--){
+                    m=i*j;
+                    if(isPal(m)&&(m)<n)
+                       if(sol<m)
+                           sol=m;
+                           
+                        
+                }}
+            System.out.println(sol);
+            
+        }
+        
+    }
+    public static boolean isPal(int n){
+        int a=0,m=n;
+        while(n>0){
+            
+            a=a*10+n%10;
+            n/=10;
+        }
+        if(a==m)
+            return true;
+        else return false;
+    }
+
+}
