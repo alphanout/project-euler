@@ -1,0 +1,49 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        int p[]=new int[104730];
+        p=normalSieve();
+        for(int a0 = 0; a0 < t; a0++){
+            int n = in.nextInt();
+            System.out.println(p[n-1]);
+        }
+        
+    }
+     static int[] normalSieve() 
+    { 
+         
+         int n=104730;
+        boolean prime[]=new boolean[n / 2]; 
+         int p[]=new int[104730];
+        Arrays.fill(prime, false); 
+      
+       
+        for (int i = 3 ; i * i < n; i += 2) 
+        { 
+            
+            if (prime[i / 2] == false) 
+                for (int j = i * i; j < n; j += i * 2) 
+                    prime[j / 2] = true; 
+        } 
+      
+        
+         p[0]=2;
+      
+        
+        for (int i = 3,j=1; i < n ; i += 2) 
+            if (prime[i / 2] == false) {
+                p[j]=i;
+                j++;
+            }
+         return p;
+                 
+    } 
+}
