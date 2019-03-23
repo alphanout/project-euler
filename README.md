@@ -6,3 +6,4 @@ project-euler-solution
 4. Project Euler #4: Largest palindrome product
 5. Project Euler #5: Smallest multiple
 6. Project Euler #6: Sum square difference
+7. Project Euler #7: 10001st prime
