@@ -7,3 +7,5 @@ project-euler-solution
 5. Project Euler #5: Smallest multiple
 6. Project Euler #6: Sum square difference
 7. Project Euler #7: 10001st prime
+8. Project Euler #8: Largest product in a series
+9.Project Euler #9: Special Pythagorean triplet
